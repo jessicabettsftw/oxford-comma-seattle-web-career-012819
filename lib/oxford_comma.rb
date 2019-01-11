@@ -9,9 +9,8 @@ def oxford_comma(array)
   else #loop to correctly place "," & "and"
     position = 1
     array.each do |word|
-    
       if position < (size - 1)
-        new_string << "#{word}"
+        new_string << word
         new_string << ", "
       elsif position == (size - 1)
         new_string << word
