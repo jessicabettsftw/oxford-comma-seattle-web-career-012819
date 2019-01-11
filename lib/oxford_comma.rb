@@ -15,7 +15,8 @@ def oxford_comma(array)
         new_string += word
         new_string += " and "
       else 
-        new_string
+        new_string += word
+      end
     end
   end
 end
