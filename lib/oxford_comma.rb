@@ -14,7 +14,7 @@ def oxford_comma(array)
         new_string << ", "
       elsif position == (size - 1)
         new_string << word
-        new_string << " and "
+        new_string << ", and "
       else 
         new_string << word
       end
