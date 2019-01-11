@@ -10,13 +10,13 @@ def oxford_comma(array)
     position = 1
     array.each do |word|
       if position < (size - 1)
-        new_string << word.join 
+        new_string << "#{word}"
         new_string << ", "
       elsif position == (size - 1)
-        new_string << word.join
+        new_string << "#{word}"
         new_string << " and "
       else 
-        new_string << word.join
+        new_string << "#{word}"
       end
     end
   end
