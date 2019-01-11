@@ -4,7 +4,7 @@ def oxford_comma(array)
     array.join
   elsif size == 2
     array.join(" and ")
-  else
+  else #loop to correctly place "," & "and"
     array.join(" , ")
   end
 end
