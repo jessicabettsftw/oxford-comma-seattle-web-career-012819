@@ -1,12 +1,13 @@
 def oxford_comma(array)
   size = array.size 
+  new_size = ""
+  
   if size == 1
-    array.join
+    new_string = array.join
   elsif size == 2
-    array.join(" and ")
+    new_string = array.join(" and ")
   else #loop to correctly place "," & "and"
     position = 1
-    new_string = ""
     array.each do |word|
       if position < (size - 1)
         new_string += word 
@@ -19,4 +20,6 @@ def oxford_comma(array)
       end
     end
   end
+  
+  return new_string
 end
